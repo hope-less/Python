@@ -1,0 +1,10 @@
+a = []
+number = int(input("Write the size of your list: "))
+for i in range(number):
+  element = int(input("enter the number for the element %d: " %i))
+  a.append(element)
+for i in range(number - 1):
+    for j in range (number - i - 1):
+      if a[j] > a[j+1] :
+        a[j], a[j+1] = a[j+1], a[j]
+        print("you list array's", a)
